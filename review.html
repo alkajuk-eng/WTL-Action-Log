@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>WTL Action Log - Review</title>
+
+  <link
+    rel="stylesheet"
+    href="review.css"
+  >
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="app-header">
+
+    <div class="header-inner">
+
+      <div class="app-logo">
+        WTL <span>Action Log</span>
+      </div>
+
+      <nav class="app-nav">
+
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Log
+        </a>
+
+        <a
+          href="#"
+          class="nav-link"
+        >
+          Handover
+        </a>
+
+        <a
+          href="attendee.html"
+          class="nav-link"
+        >
+          Attendees
+        </a>
+
+        <a
+          href="machines.html"
+          class="nav-link"
+        >
+          Machines
+        </a>
+
+        <a
+          href="review.html"
+          class="nav-link active"
+        >
+          Review
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="app-main">
+
+    <div class="page-header">
+
+      <h1>Review</h1>
+
+      <p>
+        Review the selected action log details.
+      </p>
+
+    </div>
+
+
+    <!-- =========================
+         INDEX DATA
+    ========================== -->
+
+    <section class="review-section">
+
+      <h2>Action Log</h2>
+
+      <div class="info-grid">
+
+        <div class="info-box">
+
+          <span class="info-label">
+            Date
+          </span>
+
+          <span
+            id="reviewDate"
+            class="info-value"
+          >
+            -
+          </span>
+
+        </div>
+
+
+        <div class="info-box">
+
+          <span class="info-label">
+            Section
+          </span>
+
+          <span
+            id="reviewSection"
+            class="info-value"
+          >
+            -
+          </span>
+
+        </div>
+
+
+        <div class="info-box">
+
+          <span class="info-label">
+            Shift
+          </span>
+
+          <span
+            id="reviewShift"
+            class="info-value"
+          >
+            -
+          </span>
+
+        </div>
+
+
+        <div class="info-box">
+
+          <span class="info-label">
+            Team Leader
+          </span>
+
+          <span
+            id="reviewTeamLeader"
+            class="info-value"
+          >
+            -
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ATTENDEES
+    ========================== -->
+
+    <section class="review-section">
+
+      <h2>Attendees</h2>
+
+      <div
+        id="attendeesList"
+        class="attendees-list"
+      >
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MACHINES
+    ========================== -->
+
+    <section class="review-section">
+
+      <h2>Machines</h2>
+
+      <div
+        id="machinesContainer"
+        class="machines-container"
+      >
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BUTTONS
+    ========================== -->
+
+    <div class="review-buttons">
+
+      <button
+        type="button"
+        id="backButton"
+        class="btn btn-secondary"
+      >
+        Back
+      </button>
+
+      <button
+        type="button"
+        id="clearButton"
+        class="btn btn-danger"
+      >
+        Clear
+      </button>
+
+      <button
+        type="button"
+        id="saveButton"
+        class="btn btn-primary"
+      >
+        Save PDF
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       jsPDF
+  ========================== -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+  ></script>
+
+
+  <script src="review.js"></script>
+
+</body>
+
+</html>

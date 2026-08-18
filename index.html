@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WTL Action Log</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <header class="app-header">
+    <div class="header-inner">
+
+      <div class="app-logo">
+        WTL <span>Action Log</span>
+      </div>
+
+      <nav class="app-nav">
+        <a href="index.html" class="nav-link active">Log</a>
+        <a href="#" class="nav-link">Handover</a>
+        <a href="attendee.html" class="nav-link">Attendees</a>
+        <a href="machines.html" class="nav-link">Machines</a>
+        <a href="review.html" class="nav-link">Review</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <div class="page-header">
+      <h1>WTL Action Log</h1>
+      <p>Select the details for the action log.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" class="date">
+    </div>
+
+    <div class="form-group">
+      <label for="section">Section</label>
+      <select id="section" class="section">
+        <option value="" selected disabled>
+          Select Section
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="shift">Shift</label>
+      <select id="shift" class="shift">
+        <option value="" selected disabled>
+          Select Shift
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="teamLeader">Team Leader</label>
+      <select id="teamLeader" class="teamLeader">
+        <option value="" selected disabled>
+          Select Team Leader
+        </option>
+      </select>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
